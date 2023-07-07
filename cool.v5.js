@@ -1,3 +1,27 @@
+// const startButton = document.querySelectorAll ('gameContainer');
+// const buttons = document.querySelector ('#buttonContainer' );
+
+// startbutton.addEventListener('click', playerChoice())
+
+// Array.from(buttons).forEach(function(buttons){
+//     buttons.addEventListerner('click',playRound())
+// })
+
+
+// Function to write text before game starts
+let i = 0;
+let txt = 'Rock, Paper, Scissors?';
+let speed = 50;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("gameh1").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+
 const choices = ["rock", "paper", "scissors"];
 const winners= [];
 
@@ -28,6 +52,8 @@ function playRound(){
     const winner = checkWinner(playerSelection, computerSelection);
     winners.push(winner);
     console.log(winner);
+
+    ///* adds 1+ to round winners score*///
     if(winner === "player"){
         playerScore++;
     }else if(winner === "tie"){
@@ -41,13 +67,13 @@ function playRound(){
     console.log("ties:", ties);
 }
 
-            ///*PLAYER CHOICE*///
-function playerChoice() {
-let input = prompt("select rock, paper, or scissors");
-    console.log(input);
-    let choiceP = input;
-    return (choiceP);
-}
+            /*PLAYER CHOICE*///
+// function playerChoice() {
+// let input = prompt("select rock, paper, or scissors");
+//     console.log(input);
+//     let choiceP = input;
+//     return (choiceP);
+// }
 
             /*COMPUTER CHOICE*///
 function computerChoice() {

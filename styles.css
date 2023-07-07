@@ -1,0 +1,102 @@
+#gameContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    height: 500px;
+    text-transform: uppercase;
+}
+.topContainer {
+    font-size: xx-large;
+    width: 1100px;
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    background-color: rgb(73, 2, 2);
+    color: silver;
+    border-radius: 10px;
+}
+.bottomContainer {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 125px;
+}
+#playerContainer {
+   height: 400px;
+   width: 300px;
+   display: flex;
+   display: inline-block;
+   justify-content: center;
+   flex-direction: row;
+   background-color: rgb(73, 2, 2);
+   border-radius: 10px;
+   margin-top: 10px;
+}
+#computerContainer {
+   height: 400px;
+   width: 300px;
+   display: flex;
+   display: inline-block;
+   justify-content: center;
+   flex-direction: row;
+   background-color: rgb(73, 2, 2);
+   border-radius: 10px;
+   margin-top: 10px;
+}
+.computerTitle {
+    display: flex;
+    justify-content: center;
+    color: silver;
+}
+.playerTitle{
+    display: flex;
+    justify-content: center;
+    color: silver;
+}
+.playerButtons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.computerButtons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+button {
+    font-size: 20px;
+    background-color: black;
+    color: silver;
+    border: 2px solid red;
+}
+.startContainer {
+    max-width: 1100;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
+}
+.startButton {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 270px;
+    width: 200px;
+
+}
+.playerImage {
+    margin-left: 37.5px;
+    margin-bottom: 25px;
+    max-width: 75%;
+    height: auto;
+}
+.computerImage {
+    margin-left: 37.5px;
+    margin-bottom: 25px;
+    max-width: 75%;
+    height: auto;
+    
+}
