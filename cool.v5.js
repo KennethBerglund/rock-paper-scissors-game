@@ -1,12 +1,9 @@
-// const startButton = document.querySelectorAll ('gameContainer');
-// const buttons = document.querySelector ('#buttonContainer' );
 
-// startbutton.addEventListener('click', playerChoice())
+const buttons = document.querySelector ('.computerButtons' );
 
-// Array.from(buttons).forEach(function(buttons){
-//     buttons.addEventListerner('click',playRound())
-// })
-
+Array.from(buttons).forEach(function(buttons){
+    buttons.addEventListerner('click',playRound())
+})
 
 // Function to write text before game starts
 let i = 0;
